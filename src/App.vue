@@ -1,32 +1,45 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Homsssrfe</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+  <div class="container">
+    <div class="container side_block" id="side_block">
+      Side
+    </div>
+    <div class="container game_zone" id="gane_zone">
+      <News_blok></News_blok>>
+    </div>
   </div>
 </template>
 
+
+<script>
+  // import { mapGetters, mapActions } from "vuex";
+import News_blok from './components/game_zone/news_block.vue'
+// import Authorisation from 'src_old/components/side_block/authorisation.vue';
+
+  export default {
+    name: 'App',
+    components: {
+      News_blok,
+    }
+  }
+  </script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.container {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    overflow: hidden;
 }
-
-nav {
-  padding: 30px;
+.side_block {
+    width: 300px;
+    height: 100vh;
+    float: left;
+    background: #383838;; 
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.game_zone {
+    width: 100vw;
+    height: 100vh;
+    flex: 1 0;
+    background: #313131;
 }
 </style>

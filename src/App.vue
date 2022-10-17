@@ -28,18 +28,22 @@ import News_blok from './components/game_zone/news_block.vue'
     margin: 0px;
     padding: 0px;
     display: flex;
-    overflow: hidden;
+    overflow: overlay;
+  
 }
 .side_block {
     width: 300px;
+    min-width: 200px;
     height: 100vh;
     float: left;
     background: #383838;; 
 }
 .game_zone {
     width: 100vw;
+    min-width: 600px;
     height: 100vh;
     flex: 1 0;
     background: #313131;
+    overflow-y: overlay;
 }
 </style>

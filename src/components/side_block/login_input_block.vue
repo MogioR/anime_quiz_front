@@ -1,9 +1,9 @@
 <template>
     <div class="container">
-        <span class="text header">Авторизация</span>
-        <input type="text" id="login_input" maxlength="16" class="text_input" placeholder="Логин">
-        <input type="password" id="pass_input" maxlength="32" class="text_input" placeholder="Пароль">
         <span class="text button">Войти</span>
+        <input type="password" id="pass_input" maxlength="32" class="text_input" placeholder="Пароль">
+        <input type="text" id="login_input" maxlength="16" class="text_input" placeholder="Логин">
+        <span class="text header">Авторизация</span>
     </div>
 </template>
 
@@ -18,11 +18,8 @@ export default {
 
 <style scoped>
 .container {
-  /* position: absolute;
-  margin-top: 50%; */
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
 }
 
 .text_input {
@@ -37,6 +34,9 @@ export default {
 }
 
 .text {
+  width: 260px;
+  /* margin: 0 10px 5px 15px; */
+
   text-align: center;
   font-family : 'Ubuntu';
   font-style: normal;

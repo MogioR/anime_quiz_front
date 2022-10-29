@@ -30,17 +30,24 @@ export default {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .center {
-    width: 100%;
+    width: 300px;
+    top: 40%;
+    position: absolute;
+
     display: flex;
     align-items: center;
 }
 
 .bottom {
-    width: 100%;
+    width: 300px;
+
     display: flex;
     align-items: center;
 }

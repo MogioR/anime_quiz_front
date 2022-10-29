@@ -25,51 +25,19 @@ export default {
     return {
       news: [
         {
-            'title': 'Title1',
-            'body': 'Body1'
+            'title': 'Обновление фронта',
+            'body': '<ul><li>Поностью перерисован интерфейс </li><li> Добавлена система настроек комнаты</li></ul>'
         },
         {
-            'title': 'Title2',
-            'body': 'Body2'
+            'title': 'Новость дня',
+            'body': 'Рекорд по регистрациям, 1 новый пользователь.'
         },
         {
-            'title': 'Title3',
-            'body': 'Body3'
+            'title': 'Обновление бека',
+            'body': 'Проект перешел на полностью микросервисную архитектуру для улучшения стабильности и масштабируемости.'
         },
         {
             'title': 'Title4',
-            'body': 'Body2'
-        },
-        {
-            'title': 'Title3',
-            'body': 'Body3'
-        },
-        {
-            'title': 'Title2',
-            'body': 'Body2'
-        },
-        {
-            'title': 'Title3',
-            'body': 'Body3'
-        },
-        {
-            'title': 'Title2',
-            'body': 'Body2'
-        },
-        {
-            'title': 'Title3',
-            'body': 'Body3'
-        },
-        {
-            'title': 'Title2',
-            'body': 'Body2'
-        },
-        {
-            'title': 'Title3',
-            'body': 'Body3'
-        },
-        {
-            'title': 'Title2',
             'body': 'Body2'
         },
         {

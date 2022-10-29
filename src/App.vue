@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <div class="container side_block" id="side_block">
-      Side
+      <AuthorisationBlock></AuthorisationBlock>
     </div>
     <div class="container game_zone" id="gane_zone">
-      <News_blok></News_blok>>
+      <News_blok></News_blok>
     </div>
   </div>
 </template>
@@ -13,17 +13,19 @@
 <script>
   // import { mapGetters, mapActions } from "vuex";
 import News_blok from './components/game_zone/news_block.vue'
+import AuthorisationBlock from './components/side_block/authorisation_block.vue'
 // import Authorisation from 'src_old/components/side_block/authorisation.vue';
 
   export default {
     name: 'App',
     components: {
       News_blok,
+      AuthorisationBlock
     }
   }
   </script>
 
-<style>
+<style scoped>
 .container {
     margin: 0px;
     padding: 0px;
@@ -33,7 +35,7 @@ import News_blok from './components/game_zone/news_block.vue'
 }
 .side_block {
     width: 300px;
-    min-width: 200px;
+    min-width: 300px;
     height: 100vh;
     float: left;
     background: #383838;; 

@@ -1,10 +1,10 @@
 <template>
   <div class="microblog_item_main">
     <div class="microblog_item_title">
-        {{title}}
+      <span v-html="title"></span>
     </div>
     <div class="microblog_item_body">
-      {{body}}
+      <span v-html="body"></span>
     </div>
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
   border-radius: 14px;
   border: 4px solid #4b4b4b;
 
-  display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 .microblog_item_title {
@@ -36,11 +36,31 @@ export default {
   width: 100%;
   border-bottom: 4px solid #4b4b4b;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  color: white;
+  font-family : 'Ubuntu';
+  font-style: normal;
+  font-size: 30px;
+
 }
 
 .microblog_item_body {
   display: flex;
-  height: 100%;
-  width: 100%;
+  height: 230px;
+  width: 270px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  color: rgb(138, 138, 138);
+  font-family : 'Ubuntu';
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px;
 }
+
 </style>

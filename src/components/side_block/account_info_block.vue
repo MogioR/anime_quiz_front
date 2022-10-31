@@ -15,7 +15,7 @@
                 <div>
                     <span class="text account_nickname">Mogior</span>
                     <div class="account_info"><span class="text">Уровень </span> <span class="text"> 10 </span></div>
-                    <div class="account_info"><span class="text">Опт </span> <span class="text">12</span></div>
+                    <div class="account_info"><span class="text">Опыт </span> <span class="text">12</span></div>
                     <div class="account_info"><span class="text">Статус</span><span class="text">Онлайн</span></div>
                 </div>
             </div>

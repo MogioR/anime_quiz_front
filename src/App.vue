@@ -5,7 +5,8 @@
       <ContextBlock v-if="currentState == 'lobby_search'"/>
     </div>
     <div class="container game_zone" id="gane_zone">
-      <News_blok></News_blok>
+      <News_blok v-if="currentState == 'authorisation'"/>
+      <LobbySearchBlock  v-if="currentState == 'lobby_search'"/>
     </div>
   </div>
 </template>
@@ -16,13 +17,15 @@
 import News_blok from './components/game_zone/news_block.vue'
 import AuthorisationBlock from './components/side_block/authorisation_block.vue'
 import ContextBlock from './components/side_block/context_block.vue';
+import LobbySearchBlock from './components/game_zone/lobby_search_block.vue'
 
   export default {
     name: 'App',
     components: {
       News_blok,
       AuthorisationBlock,
-      ContextBlock
+      ContextBlock,
+      LobbySearchBlock
     },
     data() {
       return {

@@ -1,7 +1,7 @@
 <template>
     <div class="context_container">
         <div>
-           Settings
+           <ContextMenuBlock/>
         </div>
         <div>
             <AccountInfoBlock/>
@@ -11,13 +11,14 @@
 
 <script>
 
-
+import ContextMenuBlock from '@/components/side_block/context_menu_block.vue'
 import AccountInfoBlock from '@/components/side_block/account_info_block.vue'
 
 export default {
   name: 'ContextBlock',
   components: {
-    AccountInfoBlock
+    AccountInfoBlock,
+    ContextMenuBlock
   },
   data() {
     return {}

@@ -1,6 +1,12 @@
 <template>
     <div class="container">
-        <LobbySearchItem/>
+        <LobbySearchItem v-for="n of lobbyes" :key=n.id
+        v-bind:name="n.name"
+        v-bind:room_size="n.room_size"
+        v-bind:player_count="n.player_count"
+        v-bind:password="n.password"
+        v-bind:state="n.state">
+      </LobbySearchItem>
     </div>
 </template>
 
@@ -14,6 +20,36 @@ export default {
   },
   data() {
     return {
+      lobbyes: [
+        {
+          "name": 'Комната 1',
+          "room_size": 10,
+          "player_count": 9,
+          "password": false,
+          "state": "В комнате" 
+        },
+        {
+          "name": 'Blackfan and Loli',
+          "room_size": 1,
+          "player_count": 1,
+          "password": false,
+          "state": "В игре" 
+        },
+        {
+          "name": 'Blackfan and Loli',
+          "room_size": 1,
+          "player_count": 1,
+          "password": false,
+          "state": "В игре" 
+        },
+        {
+          "name": 'Blackfan and Loli',
+          "room_size": 1,
+          "player_count": 1,
+          "password": false,
+          "state": "В игре" 
+        }
+      ]
     }
   }
 }
@@ -25,5 +61,11 @@ export default {
     height: 100%;
 
     display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.lol {
+  background-color: blue;
 }
 </style>

@@ -1,11 +1,6 @@
 <template>
-    <div class="lobby_search_item">
-        <span class="text header">{{name}}</span>
-        <div class="room_avatar">
-          <div class="text num_players_text"><span>{{player_count}}</span><span> / </span><span>{{room_size}}</span></div>
-        </div>
-        <span class="text">{{state}}</span>
-        <div class="text connect_room_button">Подключится</div>
+    <div class="room_player_item">
+        lol
     </div>
 </template>
 
@@ -27,7 +22,7 @@ export default {
 </script>
 
 <style scoped>
-.lobby_search_item {
+.room_player_item {
     width: 190px;
     height: 300px;
     border-radius: 9px;

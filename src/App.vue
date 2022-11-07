@@ -2,11 +2,12 @@
   <div class="container">
     <div class="container side_block" id="side_block">
       <AuthorisationBlock v-if="currentState == 'authorisation'"/>
-      <ContextBlock v-if="currentState == 'lobby_search'"/>
+      <ContextBlock v-if="currentState == 'room_search' || currentState == 'room'"/>
     </div>
     <div class="container game_zone" id="gane_zone">
       <News_blok v-if="currentState == 'authorisation'"/>
-      <LobbySearchBlock  v-if="currentState == 'lobby_search'"/>
+      <LobbySearchBlock  v-if="currentState == 'room_search'"/>
+      <RoomBlock  v-if="currentState == 'room'"/>
     </div>
   </div>
 </template>
@@ -18,6 +19,7 @@ import News_blok from './components/game_zone/news_block.vue'
 import AuthorisationBlock from './components/side_block/authorisation_block.vue'
 import ContextBlock from './components/side_block/context_block.vue';
 import LobbySearchBlock from './components/game_zone/lobby_search_block.vue'
+import RoomBlock from './components/game_zone/room_block.vue'
 
   export default {
     name: 'App',
@@ -25,11 +27,12 @@ import LobbySearchBlock from './components/game_zone/lobby_search_block.vue'
       News_blok,
       AuthorisationBlock,
       ContextBlock,
-      LobbySearchBlock
+      LobbySearchBlock,
+      RoomBlock
     },
     data() {
       return {
-        currentState: 'lobby_search',
+        currentState: 'room',
       }
     },
   }
@@ -41,14 +44,13 @@ import LobbySearchBlock from './components/game_zone/lobby_search_block.vue'
     padding: 0px;
     display: flex;
     overflow: overlay;
-  
 }
 .side_block {
     width: 300px;
     min-width: 300px;
     height: 100vh;
     float: left;
-    background: #383838;; 
+    background: #383838;
 }
 .game_zone {
     width: 100vw;

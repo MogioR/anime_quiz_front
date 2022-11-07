@@ -9,7 +9,7 @@
         </div>
         <div class="avatar_backplate">
             <div class="avatar">
-                AVAs
+                
             </div>
             <div class="stats">
                 <div>
